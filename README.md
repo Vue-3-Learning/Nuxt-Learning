@@ -2,6 +2,7 @@
 Nuxt Js 
 ---
 [Introduction](#intro)
+[SetUp](#setup)
 
 ---
 ## Intro
@@ -13,3 +14,9 @@ Key Features:
 - File-based Routing: Create pages simply by adding Vue files in the pages directory.
 - Plugins and Modules: Easily add plugins and modules to extend your application.
 - Middleware: Add custom functions to run before rendering a page.
+## Setup
+```
+npx create-nuxt-app my-nuxt-app
+cd my-nuxt-app
+npm run dev
+```
