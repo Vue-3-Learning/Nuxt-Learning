@@ -77,3 +77,54 @@ Create a file called default.vue inside the layouts directory:
 </template>
 ```
 The <nuxt /> component renders the page component based on the route.
+### Plugins
+Plugins in Nuxt.js allow you to add custom functionalities to your application.
+
+Example:
+
+Create a file called myPlugin.js inside the plugins directory:
+```
+export default ({ app }, inject) => {
+  inject('myInjectedFunction', () => console.log('This is an injected function'))
+}
+```
+Then, register this plugin in nuxt.config.js:
+```
+export default {
+  plugins: [
+    '~/plugins/myPlugin.js'
+  ]
+}
+```
+You can now use the injected function in your components:
+```
+<template>
+  <div>
+    <button @click="$myInjectedFunction()">Click me</button>
+  </div>
+</template>
+```
+### AsyncData
+asyncData is a special method in Nuxt.js used to fetch data before rendering a page.
+
+Example:
+
+In the pages/index.vue file:
+```
+<template>
+  <div>
+    <h1>{{ title }}</h1>
+  </div>
+</template>
+
+<script>
+export default {
+  async asyncData() {
+    const data = await fetch('https://jsonplaceholder.typicode.com/posts/1')
+    const post = await data.json()
+    return { title: post.title }
+  }
+}
+</script>
+```
+This will fetch the post data before rendering the page and set the title data property.
