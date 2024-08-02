@@ -3,7 +3,7 @@ Nuxt Js
 ---
 - [Introduction](#intro)
 - [SetUp](#setup)
-
+- [Project Structure](#project-structure)
 ---
 ## Intro
 Nuxt.js is a powerful framework built on top of Vue.js, designed to help you build server-side rendered (SSR) applications, single-page applications (SPA), and static websites. Nuxt.js takes care of many things that you would normally have to configure yourself in a Vue.js project, such as routing, server-side rendering, and SEO.
@@ -20,3 +20,15 @@ npx create-nuxt-app my-nuxt-app
 cd my-nuxt-app
 npm run dev
 ```
+## Project Structure
+my-nuxt-app/
+├── assets/            # Uncompiled assets such as LESS, SASS, or JavaScript
+├── components/        # Vue.js components
+├── layouts/           # Layouts for pages
+├── middleware/        # Middleware for pages or routes
+├── pages/             # Vue files for each route
+├── plugins/           # Plugins to run before rendering a page
+├── static/            # Static files directly accessible via URL
+├── store/             # Vuex store for state management
+├── nuxt.config.js     # Configuration file
+└── package.json       # Project dependencies and scripts
