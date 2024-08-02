@@ -21,6 +21,7 @@ cd my-nuxt-app
 npm run dev
 ```
 ## Project Structure
+```
 my-nuxt-app/
 ├── assets/            # Uncompiled assets such as LESS, SASS, or JavaScript
 ├── components/        # Vue.js components
@@ -32,3 +33,4 @@ my-nuxt-app/
 ├── store/             # Vuex store for state management
 ├── nuxt.config.js     # Configuration file
 └── package.json       # Project dependencies and scripts
+```
