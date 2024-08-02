@@ -91,13 +91,13 @@ Let’s walk through a simple real-world example: a blog post page.
 #### Request Initiation:
 
 User navigates to https://my-nuxt-blog.com/posts/1.
-### Routing:
+#### Routing:
 
 Nuxt.js maps the URL to pages/posts/_id.vue.
 Server-Side Rendering (SSR):
 
 The server renders the HTML for the blog post page.
-### Data Fetching:
+#### Data Fetching:
 
 In pages/posts/_id.vue:
 ```
@@ -118,10 +118,10 @@ export default {
 }
 </script>
 ```
-### Rendering:
+#### Rendering:
 
 The server generates the HTML with the fetched data.
-### Hydration:
+#### Hydration:
 
 The HTML is sent to the browser and Vue.js attaches event listeners.
 Interactivity:
