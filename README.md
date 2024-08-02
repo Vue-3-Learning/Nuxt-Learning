@@ -1,8 +1,8 @@
 # Nuxt-Learning
 Nuxt Js 
 ---
-[Introduction](#intro)
-[SetUp](#setup)
+- [Introduction](#intro)
+- [SetUp](#setup)
 
 ---
 ## Intro
