@@ -4,6 +4,7 @@ Nuxt Js
 - [Introduction](#intro)
 - [SetUp](#setup)
 - [Project Structure](#project-structure)
+- [Basic Concepts](#basic-concepts)
 ---
 ## Intro
 Nuxt.js is a powerful framework built on top of Vue.js, designed to help you build server-side rendered (SSR) applications, single-page applications (SPA), and static websites. Nuxt.js takes care of many things that you would normally have to configure yourself in a Vue.js project, such as routing, server-side rendering, and SEO.
@@ -34,3 +35,25 @@ my-nuxt-app/
 ├── nuxt.config.js     # Configuration file
 └── package.json       # Project dependencies and scripts
 ```
+## Basic Concepts
+### Pages and Routing
+Nuxt.js uses a file-based routing system. Each .vue file in the pages directory automatically becomes a route.
+Create a file called index.vue inside the pages directory:
+```
+<template>
+  <div>
+    <h1>Home Page</h1>
+  </div>
+</template>
+```
+This will create a route for the homepage (/).
+
+Create another file called about.vue inside the pages directory:
+```
+<template>
+  <div>
+    <h1>About Page</h1>
+  </div>
+</template>
+```
+This will create a route for /about.
