@@ -1,7 +1,7 @@
 # Nuxt-Learning
 Nuxt Js 
 ---
-[IntroDuction](#intor)
+[Introduction](#intro)
 
 ---
 ## Intro
