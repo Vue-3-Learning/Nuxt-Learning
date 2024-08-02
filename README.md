@@ -57,3 +57,23 @@ Create another file called about.vue inside the pages directory:
 </template>
 ```
 This will create a route for /about.
+### Layouts
+Layouts are used to define the common structure of your pages. By default, Nuxt.js uses the default.vue layout in the layouts directory.
+
+Example:
+
+Create a file called default.vue inside the layouts directory:
+```
+<template>
+  <div>
+    <header>
+      <nav>
+        <nuxt-link to="/">Home</nuxt-link>
+        <nuxt-link to="/about">About</nuxt-link>
+      </nav>
+    </header>
+    <nuxt />
+  </div>
+</template>
+```
+The <nuxt /> component renders the page component based on the route.
