@@ -9,12 +9,14 @@ Nuxt Js
 ## Intro
 Nuxt.js is a powerful framework built on top of Vue.js, designed to help you build server-side rendered (SSR) applications, single-page applications (SPA), and static websites. Nuxt.js takes care of many things that you would normally have to configure yourself in a Vue.js project, such as routing, server-side rendering, and SEO.
 Key Features:
-- Server-Side Rendering (SSR): By default, Nuxt.js applications are server-rendered, which can improve SEO and performance.
-- Static Site Generation (SSG): Nuxt.js can generate a static version of your application.
-- Automatic Code Splitting: Nuxt.js automatically splits your code to improve load times.
-- File-based Routing: Create pages simply by adding Vue files in the pages directory.
-- Plugins and Modules: Easily add plugins and modules to extend your application.
-- Middleware: Add custom functions to run before rendering a page.
+- Server-Side Rendering (SSR):Improves SEO and performance by rendering pages on the server before sending them to the client.
+- Static Site Generation (SSG): Allows you to generate a fully static site that can be hosted on any static hosting service.
+- Automatic Code Splitting: Splits your code into smaller chunks to improve load times.
+- File-based Routing: Automatically generates routes based on the file structure in the pages directory.
+- SEO Optimization: Easier to manage meta tags and other SEO-related configurations.
+- Community and Ecosystem: Large community and many modules/plugins to extend functionality.
+### What is npx?
+npx is a tool that comes with Node.js, which allows you to execute packages from the npm registry without globally installing them. When you use npx create-nuxt-app, it downloads the create-nuxt-app package and runs it to set up a new Nuxt.js project.
 ## Setup
 ```
 npx create-nuxt-app my-nuxt-app
