@@ -88,7 +88,7 @@ After hydration, clicking the button will trigger the showAlert method and displ
 Real-World Example
 Let’s walk through a simple real-world example: a blog post page.
 
-### Request Initiation:
+#### Request Initiation:
 
 User navigates to https://my-nuxt-blog.com/posts/1.
 ### Routing:
